@@ -475,7 +475,7 @@ def rename_column(table):
             try:
                 migrate(migrator.rename_column(table, rename, rename_to))
             except Exception as exc:
-                flash('Error attempting to rename column "%s": %s' % (name, exc),
+                flash('Error attempting to rename column "%s": %s' % (rename, exc),
                       'danger')
                 app.logger.exception('Error attempting to rename column.')
             else:

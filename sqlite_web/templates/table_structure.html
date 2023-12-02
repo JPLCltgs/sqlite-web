@@ -8,7 +8,7 @@
 
   <h3 id="columns">
     {% if not dataset.is_readonly and not is_view %}
-      <p class="float-right"><a class="btn btn-primary btn-sm" href="{{ url_for('add_column', table=table) }}">+ Add column</a></p>
+      <p class="float-end"><a class="btn btn-primary btn-sm" href="{{ url_for('add_column', table=table) }}">+ Add column</a></p>
     {% endif %}
     Columns
   </h3>
@@ -72,7 +72,7 @@
   {% if not is_view %}
   <h3 id="indexes">
     {% if not dataset.is_readonly %}
-      <p class="float-right"><a class="btn btn-primary btn-sm" href="{{ url_for('add_index', table=table) }}">+ Add index</a></p>
+      <p class="float-end"><a class="btn btn-primary btn-sm" href="{{ url_for('add_index', table=table) }}">+ Add index</a></p>
     {% endif %}
     Indexes
   </h3>

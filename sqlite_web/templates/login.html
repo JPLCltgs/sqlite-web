@@ -9,8 +9,10 @@
 <form action="{{ url_for('login') }}" class="form" method="post">
   <div class="form-group">
     <label for="id_password">Password</label>
+    <p></p>
     <input class="form-control" id="id_password" name="password" type="password" value="" />
-  </div>
+  </div>  
+  <p></p>
   <button class="btn btn-primary" type="submit">Login</button>
 </form>
 {% endblock %}

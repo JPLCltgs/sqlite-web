@@ -23,7 +23,7 @@
     </li>
     {% endif %}
     {% if not dataset.is_readonly %}
-    <li class="nav-item ml-auto">
+    <li class="nav-item ms-auto">
       <a class="nav-link{% block drop_tab_class %}{% endblock %}" href="{{ url_for('drop_table', table=table) }}">Drop</a>
     </li>
       {% if not is_view or 'insert' in view_ops %}

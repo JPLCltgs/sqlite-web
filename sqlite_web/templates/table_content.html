@@ -2,7 +2,7 @@
 
 {% block content_title %}
   {{ super() }}
-  <small>{{ ds_table.all().count() }} rows, showing page {{ page }}</small>
+  <figcaption class="blockquote-footer"><cite title="Source Title" style="font-size:0.8em"> {{ ds_table.all().count() }} rows <cite title="Source Title"> showing page {{ page }}</cite>
 {% endblock %}
 
 {% block content_tab_class %} active{% endblock %}
